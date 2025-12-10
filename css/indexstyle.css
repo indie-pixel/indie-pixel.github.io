@@ -1,0 +1,120 @@
+/* Main navigation styles */
+.main-navigation {
+    position: relative;
+    top: 0;
+    width: 800px;
+    height: 35px;
+    background-color: #ffff;
+    z-index: 10;   
+}
+
+.main-navigation.a{
+    display: inline-table;
+    color: #dac8e7da;
+    font-family: sans-serif;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin: 8px 0 8px 0;
+}
+
+.main-navigation nav {
+    background-color: #e2ddef6b;
+    width: 100px;
+    margin-top: 5px;
+    padding: 6px 10px;
+    display: block;
+    display: flex;
+    display: none;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.main-navigation nav a:hover,
+.main-navigation nav a:focus { color: #3ea2c4; }
+.main-navigation nav a:active { color: #0b4177; }
+.main-navigation nav a.active { color: #d6336c; font-weight: 600; }
+
+.hamburger-icon {
+    display: block;
+    font-size: 30px;
+    line-height: 30px;
+    margin: 0 0 0 10px;
+}
+
+.main-navigation nav a {
+    display: block;
+    padding: 0.2rem 0;
+    text-decoration: none;
+    color: inherit;
+}
+.main-navigation nav a:last-child { margin-bottom: 0; }
+
+.hamburger-icon:before {
+    content: "\2261";
+}
+
+/* flexible screen */
+@media (max-width: 520px) {
+    .main-navigation nav {
+        gap: 0.5rem;
+        flex-wrap: wrap;
+    }
+}
+
+/* text / layout */
+header {
+    width: 100%;
+    padding: 0.5rem 0;
+    margin: 0 0 0 0;
+}
+
+h1 {
+    margin: 0; /* remove default h1 margin so nav sits directly underneath */
+    padding: 0.25rem 0;
+}
+
+h2 {
+    font-size: 1.25rem;
+    font-style: italic;
+    line-height: 1.3;
+    margin: 1.25rem 0 0.5rem;
+    color: #222;
+    font-weight: 550;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 700px;
+    margin: 2rem auto; 
+    padding: 0 1rem; 
+    background: #fff;
+}
+
+img {
+    width: 200px;
+    border: none; 
+    margin: 20px;
+}
+
+img.left{
+    float: left;
+}
+
+img.right{
+    float: right;
+}
+
+img.center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+ul {
+    text-decoration: none;
+    list-style-type: none;
+    padding: 0;
+}
